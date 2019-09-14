@@ -178,9 +178,7 @@ def winning_team
   new_hash.each do |team, players|
       players[:players].each do |names|
         names.each do |this_player, name|
-          if name[:points].to_i == most_points
-            return this_player
-          end
+          team_two += name[:points].to_i
         end
       end
   end
