@@ -121,7 +121,7 @@ end
 
 def big_shoe_rebounds
   new_hash = game_hash
-  player_numbers = []
+  big_shoe = 0
   new_hash.each do |team, players|
     if players[:team_name] == team_name
       players[:players].each do |names|
@@ -132,7 +132,6 @@ def big_shoe_rebounds
       end
     end
   end
-  player_numbers
 end
 
 def good_practices
