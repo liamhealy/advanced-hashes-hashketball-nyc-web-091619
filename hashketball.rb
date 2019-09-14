@@ -187,6 +187,11 @@ def winning_team
         end
       end
   end
+  if team_one > team_two
+    return "Brooklyn Nets"
+  else
+    return "Charlotte Hornets"
+  end
 end
 
 def good_practices
