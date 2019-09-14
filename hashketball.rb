@@ -217,6 +217,7 @@ def long_name_steals_a_ton?
   longest_name = ""
   length = 0
   most_steals = 0
+  steals_a_lot = ""
   new_hash.each do |team, players|
       players[:players].each do |names|
         names.each do |this_player, name|
