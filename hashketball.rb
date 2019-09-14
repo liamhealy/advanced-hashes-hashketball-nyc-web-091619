@@ -98,15 +98,6 @@ def player_numbers(team_name)
       if players[:team_name] == team_name
         player_numbers << name[:number].to_i
       end
-        if this_player == player_name
-          # return name[:points].to_i
-        end
-        names.each do |player, stats|
-          if player == player_name
-            # total_points += stats[:points].to_i
-          end
-        end
-      end
     end
   end
   player_numbers
