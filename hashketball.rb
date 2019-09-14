@@ -194,6 +194,27 @@ def winning_team
   end
 end
 
+def player_with_longest_name
+  new_hash = game_hash
+  longest_name = ""
+  length = 0
+  new_hash.each do |team, players|
+      players[:players].each do |names|
+        names.each do |this_player, name|
+          # binding.pry
+          if name[:shoe].to_i > big_shoe
+            big_shoe = name[:shoe].to_i
+          end
+        end
+        names.each do |this_player, name|
+          if name[:shoe].to_i == big_shoe
+            return name[:rebounds].to_i
+          end
+        end
+      end
+  end
+end
+
 def good_practices
   game_hash.each do |location, team_data|
     #are you ABSOLUTELY SURE what 'location' and 'team data' are? use binding.pry to find out!
