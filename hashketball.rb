@@ -207,13 +207,9 @@ def player_with_longest_name
             longest_name = this_player
           end
         end
-        names.each do |this_player, name|
-          if name[:shoe].to_i == big_shoe
-            return name[:rebounds].to_i
-          end
-        end
       end
   end
+  longest_name
 end
 
 def good_practices
