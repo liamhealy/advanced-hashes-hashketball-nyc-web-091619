@@ -152,7 +152,7 @@ def most_points_scored
         end
         names.each do |this_player, name|
           if name[:shoe].to_i == big_shoe
-            return name[:points].to_i
+            return this_player
           end
         end
       end
