@@ -169,9 +169,11 @@ def winning_team
   team_two = 0
   new_hash.each do |team, players|
       players[:players].each do |names|
-        names.each do |this_player, name|
-          binding.pry
-          team_one += name[:points].to_i
+        if players[:team_name] == "Brooklyn Nets"
+          names.each do |this_player, name|
+            binding.pry
+            team_one += name[:points].to_i
+          end
         end
       end
   end
