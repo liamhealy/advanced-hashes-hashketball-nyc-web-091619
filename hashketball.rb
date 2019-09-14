@@ -182,7 +182,6 @@ def winning_team
         end
       end
   end
-  if team_one > team_two return
 end
 
 def good_practices
