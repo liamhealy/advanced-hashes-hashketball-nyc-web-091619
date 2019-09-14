@@ -109,7 +109,7 @@ def player_stats(player_name)
   new_hash.each do |team, players|
       players[:players].each do |names|
         names.each do |this_player, name|
-          # binding.pry
+          binding.pry
           player_numbers << name[:number].to_i
         end
       end
