@@ -140,7 +140,23 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  
+  new_hash = game_hash
+  big_shoe = 0
+  new_hash.each do |team, players|
+      players[:players].each do |names|
+        names.each do |this_player, name|
+          # binding.pry
+          if name[:shoe].to_i > big_shoe
+            big_shoe = name[:shoe].to_i
+          end
+        end
+        names.each do |this_player, name|
+          if name[:shoe].to_i == big_shoe
+            return name[:rebounds].to_i
+          end
+        end
+      end
+  end
 end
 
 def good_practices
