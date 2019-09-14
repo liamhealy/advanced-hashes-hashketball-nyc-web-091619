@@ -203,7 +203,7 @@ def player_with_longest_name
         names.each do |this_player, name|
           # binding.pry
           if this_player.length > length
-            length = name[:shoe].to_i
+            length = this_player.length
           end
         end
         names.each do |this_player, name|
