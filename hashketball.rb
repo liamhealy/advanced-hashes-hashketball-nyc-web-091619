@@ -129,7 +129,10 @@ def big_shoe_rebounds
           if name[:shoe].to_i > big_shoe
             big_shoe = name[:shoe].to_i
           end
-          player_numbers << name[:number].to_i
+        end
+        names.each do |this_player, name|
+          if name[:shoe].to_i == big_shoe
+            return name[:rebounds].to_i
         end
       end
   end
