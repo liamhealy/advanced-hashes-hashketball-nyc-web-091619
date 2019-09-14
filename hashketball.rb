@@ -123,14 +123,12 @@ def big_shoe_rebounds
   new_hash = game_hash
   big_shoe = 0
   new_hash.each do |team, players|
-    if players[:team_name] == team_name
       players[:players].each do |names|
         names.each do |this_player, name|
           # binding.pry
           player_numbers << name[:number].to_i
         end
       end
-    end
   end
 end
 
