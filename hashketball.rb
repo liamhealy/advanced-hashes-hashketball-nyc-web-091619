@@ -106,7 +106,6 @@ end
 
 def player_stats(player_name)
   new_hash = game_hash
-  player_numbers = []
   new_hash.each do |team, players|
     if players[:team_name] == team_name
       players[:players].each do |names|
