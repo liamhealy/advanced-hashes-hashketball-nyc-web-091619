@@ -229,6 +229,17 @@ def long_name_steals_a_ton?
         end
       end
   end
+  new_hash.each do |team, players|
+      players[:players].each do |names|
+        names.each do |this_player, name|
+          # binding.pry
+          if name[:steals].to_i > most_steals
+            most_steals = name[:steals].to_i
+            steals_a_lot = this_player
+          end
+        end
+      end
+  end
   
 end
 
