@@ -115,7 +115,6 @@ def player_stats(player_name)
         end
       end
   end
-  player_numbers
 end
 
 def good_practices
