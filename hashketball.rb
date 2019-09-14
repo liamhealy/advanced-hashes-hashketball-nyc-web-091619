@@ -166,6 +166,7 @@ end
 def winning_team
   new_hash = game_hash
   nets_points = 0
+  hornets_points = 0
   new_hash.each do |team, players|
       players[:players].each do |names|
         names.each do |this_player, name|
