@@ -95,9 +95,9 @@ def player_numbers(team_name)
     if players[:team_name] == team_name
       players[:players].each do |names|
         names.each do |this_player, name|
-        # binding.pry
-        player_numbers << name[:number].to_i
-      end
+          # binding.pry
+          player_numbers << name[:number].to_i
+        end
       end
     end
   end
