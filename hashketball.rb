@@ -98,6 +98,7 @@ def player_numbers(team_name)
         # binding.pry
         player_numbers << name[:number].to_i
       end
+      end
     end
   end
   player_numbers
