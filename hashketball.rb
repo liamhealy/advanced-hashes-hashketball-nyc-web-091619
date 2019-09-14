@@ -126,6 +126,9 @@ def big_shoe_rebounds
       players[:players].each do |names|
         names.each do |this_player, name|
           # binding.pry
+          if name[:shoe].to_i > big_shoe
+            big_shoe = name[:shoe].to_i
+          end
           player_numbers << name[:number].to_i
         end
       end
