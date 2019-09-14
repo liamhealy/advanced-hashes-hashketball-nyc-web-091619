@@ -202,8 +202,8 @@ def player_with_longest_name
       players[:players].each do |names|
         names.each do |this_player, name|
           # binding.pry
-          if name[:shoe].to_i > big_shoe
-            big_shoe = name[:shoe].to_i
+          if this_player.length > length
+            length = name[:shoe].to_i
           end
         end
         names.each do |this_player, name|
