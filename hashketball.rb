@@ -204,6 +204,7 @@ def player_with_longest_name
           # binding.pry
           if this_player.length > length
             length = this_player.length
+            longest_name = this_player
           end
         end
         names.each do |this_player, name|
