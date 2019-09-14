@@ -150,11 +150,6 @@ def most_points_scored
             most_points = name[:points].to_i
           end
         end
-        names.each do |this_player, name|
-          if name[:points].to_i == most_points
-            return this_player
-          end
-        end
       end
   end
   new_hash.each do |team, players|
