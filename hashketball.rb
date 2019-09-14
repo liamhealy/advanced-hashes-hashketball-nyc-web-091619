@@ -141,7 +141,7 @@ end
 
 def most_points_scored
   new_hash = game_hash
-  big_shoe = 0
+  most_points = 0
   new_hash.each do |team, players|
       players[:players].each do |names|
         names.each do |this_player, name|
