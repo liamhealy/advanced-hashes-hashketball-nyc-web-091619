@@ -212,6 +212,25 @@ def player_with_longest_name
   longest_name
 end
 
+def long_name_steals_a_ton?
+  new_hash = game_hash
+  longest_name = ""
+  length = 0
+  most_steals = 0
+  new_hash.each do |team, players|
+      players[:players].each do |names|
+        names.each do |this_player, name|
+          # binding.pry
+          if this_player.length > length
+            length = this_player.length
+            longest_name = this_player
+          end
+        end
+      end
+  end
+  
+end
+
 def good_practices
   game_hash.each do |location, team_data|
     #are you ABSOLUTELY SURE what 'location' and 'team data' are? use binding.pry to find out!
