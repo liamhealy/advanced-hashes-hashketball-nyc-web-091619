@@ -112,8 +112,6 @@ def player_stats(player_name)
           if this_player == player_name
             return name
           end
-          binding.pry
-          player_numbers << name[:number].to_i
         end
       end
   end
