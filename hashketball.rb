@@ -94,7 +94,7 @@ def player_numbers(team_name)
   new_hash.each do |team, players|
     players[:players].each do |names|
       names.each do |this_player, name|
-      # binding.pry
+      binding.pry
       player_numbers << name[:number].to_i
         if this_player == player_name
           # return name[:points].to_i
