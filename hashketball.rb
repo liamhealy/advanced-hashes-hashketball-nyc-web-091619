@@ -171,7 +171,7 @@ def winning_team
       players[:players].each do |names|
         if players[:team_name] == "Brooklyn Nets"
           names.each do |this_player, name|
-            binding.pry
+            # binding.pry
             team_one += name[:points].to_i
           end
         end
