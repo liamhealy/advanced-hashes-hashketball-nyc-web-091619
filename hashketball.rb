@@ -111,7 +111,7 @@ def player_stats(player_name)
       players[:players].each do |names|
         names.each do |this_player, name|
           if this_player == player_name
-            return name
+            stat_hash = {:number => name[:number].to_i, :shoe => name[:shoe].to_i, :points => name[:points].to_i, :rebounds => name[:rebounds].to_i, :assists => name[:assists].to_i, :steals => name[:steals].to_i, :blocks => name[:blocks].to_i, :slam_dunks => name[:slam_dunks].to_i}
           end
         end
       end
