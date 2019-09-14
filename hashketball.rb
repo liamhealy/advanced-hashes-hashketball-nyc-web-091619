@@ -170,7 +170,7 @@ def winning_team
   new_hash.each do |team, players|
       players[:players].each do |names|
         names.each do |this_player, name|
-          # binding.pry
+          binding.pry
           team_one += name[:points].to_i
         end
       end
@@ -182,6 +182,7 @@ def winning_team
         end
       end
   end
+  if team_one > team_two return
 end
 
 def good_practices
