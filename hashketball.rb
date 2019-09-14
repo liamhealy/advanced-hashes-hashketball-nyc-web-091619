@@ -96,7 +96,8 @@ def player_numbers(team_name)
       names.each do |this_player, name|
       binding.pry
       if players[:team_name] == team_name
-      player_numbers << name[:number].to_i
+        player_numbers << name[:number].to_i
+      end
         if this_player == player_name
           # return name[:points].to_i
         end
