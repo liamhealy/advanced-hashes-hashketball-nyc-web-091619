@@ -171,9 +171,7 @@ def winning_team
       players[:players].each do |names|
         names.each do |this_player, name|
           # binding.pry
-          if name[:points].to_i > most_points
-            most_points = name[:points].to_i
-          end
+          team_one += name[:points].to_i
         end
       end
   end
